@@ -88,7 +88,7 @@ def jugadaOrdenador(tablero, letraUsuario, letraOrdenador):
 
     print("La jugada del ordenador ha sido:", end=" ")
 
-    Colors.red()
+    Colors.cyan()
     Colors.bold()
 
     print(letraOrdenador, end=" ")
@@ -132,6 +132,7 @@ def ganaUsuario(tablero, letraUsuario):
 
     elif ganador(tablero, letraUsuario) == 0:
         Colors.bold()
+        Colors.blue
         print("\nNo ha ganado nadie, tenemos un EMPATE")
         Colors.reset()
 
@@ -151,6 +152,7 @@ def ganaOrdenador(tablero, letraOrdenador):
 
     elif ganador(tablero, letraOrdenador) == 0:
         Colors.bold()
+        Colors.blue
         print("\nNo ha ganado nadie, tenemos un EMPATE")
         Colors.reset()
 

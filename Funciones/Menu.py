@@ -14,7 +14,7 @@ def determinarTam():
 
 def escogeLetra():
     letra = input("\n\n\nQuieres jugar con la X o con 0 ?:  ")
-
+    
     while letra.upper() != "X" and letra != "0":
         letra = input("\nMe tienes que dar una X o 0 (un cero):  ")
 
@@ -27,7 +27,7 @@ def escogeLetra():
 
 def quienEmpieza():
     print("\n\n\nQuién empieza, tú o el ordenador?", end=" ")
-    Colors.green()
+    Colors.yellow()
     Colors.bold()
     empieza = input(("(TÚ = 1 | ORDENADOR = 2): "))
     Colors.reset()

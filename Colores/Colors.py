@@ -29,3 +29,8 @@ def bold():
 def reset():
     RESET = "\033[0m"
     stdout.write(RESET)
+
+def yellow():
+    YELLOW = "\033[1;33m"
+    stdout.write(YELLOW)
+

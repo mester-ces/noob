@@ -1,17 +1,18 @@
+# Importacion de librerias y archvios varios
 from Clases.Tablero import Tablero
 from Clases.Usuario import User
 
 from Funciones.Menu import chooseOption, determinarTam, quienEmpieza, escogeLetra
 from Funciones.Jugadas import jugadaUsuario, jugadaOrdenador, gameEnd, ganaUsuario, ganaOrdenador
 
-from Colores.Colors import green, cyan, bold, reset
+from Colores.Colors import green, cyan, bold, reset, yellow, blue
 
 
 # Pedimos el nombre
 
 bold()
 print("Dime tu nombre de usuario: ", end="")
-cyan()
+yellow()
 userName = input()
 reset()
 
@@ -34,7 +35,7 @@ empates = 0
 
 while opcion != 0:
 
-    green()
+    yellow()
     bold()
     print("\n\n\nPARTIDA", numPartidas)
     reset()
@@ -109,13 +110,13 @@ while opcion != 0:
 
     newUser.actualizar(numPartidas, ganadas, perdidas, empates)
 
-    bold()
+    
     print("\n\n\nTus Datos Actuales son los siguientes: \n")
-
+    
     for key, value in newUser.usuario.items():
         bold()
         print("\t", key, ":", end=" ")
-        cyan()
+        green()
         print(value)
         reset()
 

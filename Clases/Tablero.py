@@ -1,5 +1,5 @@
 from Funciones.Matriz import crearMatriz
-from Colores.Colors import bold, reset, red, cyan
+from Colores.Colors import bold, reset, red, cyan, blue, yellow
 
 
 class Tablero:
@@ -40,13 +40,13 @@ class Tablero:
 
                 if elemento == letraUsuario:
                     bold()
-                    cyan()
+                    yellow()
                     print(elemento, end="    ")
                     reset()
 
                 elif elemento == letraOrdenador:
                     bold()
-                    red()
+                    blue()
                     print(elemento, end="    ")
                     reset()
 

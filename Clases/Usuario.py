@@ -1,3 +1,4 @@
+from Colores.Colors import blue
 class User:
 
     def __init__(self, nombre):
@@ -5,10 +6,13 @@ class User:
 
 
     def actualizar(self, partidasTotales, partidasGanadas, partidasPerdidas, empates):
+        
         self.usuario.update({'Partidas Jugadas': partidasTotales,
                              'Partidas Ganadas': partidasGanadas,
                              'Partidas Perdidas': partidasPerdidas,
                              'Empates': empates})
-
+                             
+        
+                                              
 # usuario es simplemente un diccionario que contiene el nombre de quien está jugando y sus partidas ganadas y perdidas.
 # El metodo actualizar evidentemente actualiza todos los datos del usuario.

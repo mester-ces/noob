@@ -25,8 +25,9 @@ def escogeLetra():
     # Obliga al usuario a escoger una letra válida y a partir de ella determina la del Ordenador
 
 
-def quienEmpieza():
+def quienEmpieza()e
     print("\n\n\nQuién empieza, tú o el ordenador?", end=" ")
+    Colors.reset()
     Colors.yellow()
     Colors.bold()
     empieza = input(("(TÚ = 1 | ORDENADOR = 2): "))
@@ -36,6 +37,7 @@ def quienEmpieza():
         print("\nMe tienes que dar un Uno o un Dos", end=" ")
         Colors.green()
         Colors.bold()
+        Colors.red()
         empieza = input("(TÚ = 1 | ORDENADOR = 2):  ")
         Colors.reset()
 
@@ -45,9 +47,11 @@ def quienEmpieza():
 
 
 def chooseOption():
+    Colors.blue()
     opcion = int(input("\n\n\nPara comenzar el juego dame 1, para acabar el programa dame 0, (COMENZAR = 1 | ACABAR = 0):  "))
 
     while opcion != 1 and opcion != 0:
+        Colors.red()
         opcion = int(input("\nIntenta de nuevo, (COMENZAR = 1 | ACABAR = 0):  "))
 
     return opcion

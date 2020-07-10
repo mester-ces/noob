@@ -51,6 +51,7 @@ def playerMove(tablero, letra):
     move = tablero.escribir(letra, fila, columna)
 
     while move is False:
+        Colors.red()
         print("\nCasilla OCUPADA")
         fila, columna = playerData(tablero.tablero)
         move = tablero.escribir(letra, fila, columna)
@@ -132,7 +133,7 @@ def ganaUsuario(tablero, letraUsuario):
 
     elif ganador(tablero, letraUsuario) == 0:
         Colors.bold()
-        Colors.blue
+        Colors.blue()
         print("\nNo ha ganado nadie, tenemos un EMPATE")
         Colors.reset()
 

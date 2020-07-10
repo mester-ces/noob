@@ -5,7 +5,7 @@ from Clases.Usuario import User
 from Funciones.Menu import chooseOption, determinarTam, quienEmpieza, escogeLetra
 from Funciones.Jugadas import jugadaUsuario, jugadaOrdenador, gameEnd, ganaUsuario, ganaOrdenador
 
-from Colores.Colors import green, cyan, bold, reset, yellow, blue
+from Colores.Colors import green, cyan, bold, reset, yellow, blue, purple
 
 
 # Pedimos el nombre
@@ -35,7 +35,7 @@ empates = 0
 
 while opcion != 0:
 
-    yellow()
+    purple()
     bold()
     print("\n\n\nPARTIDA", numPartidas)
     reset()

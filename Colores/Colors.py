@@ -34,3 +34,6 @@ def yellow():
     YELLOW = "\033[1;33m"
     stdout.write(YELLOW)
 
+def purple() :
+    PURPLE = "\033[1;35m"
+    stdout.write(PURPLE)

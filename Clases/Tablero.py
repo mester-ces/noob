@@ -1,5 +1,5 @@
 from Funciones.Matriz import crearMatriz
-from Colores.Colors import bold, reset, red, cyan, blue, yellow
+from Colores.Colors import bold, reset, red, cyan, blue, yellow, purple
 
 
 class Tablero:
@@ -52,6 +52,7 @@ class Tablero:
 
                 else:
                     bold()
+                    purple()
                     print(elemento, end="    ")
                     reset()
 

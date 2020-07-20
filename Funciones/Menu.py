@@ -25,7 +25,7 @@ def escogeLetra():
     # Obliga al usuario a escoger una letra válida y a partir de ella determina la del Ordenador
 
 
-def quienEmpieza()e
+def quienEmpieza():
     print("\n\n\nQuién empieza, tú o el ordenador?", end=" ")
     Colors.reset()
     Colors.yellow()
